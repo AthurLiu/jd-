@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+    color: red;
+    text-align: center;
+    background-image: url("../picture/superMan.jpg");
+}
+body >div{
+    width:300px;
+    margin: 300px auto;
+}
+body form, body h1{
+    display: inline;
+}

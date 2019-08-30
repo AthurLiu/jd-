@@ -1,0 +1,61 @@
+form{
+	width:350px;
+	margin:100px auto;
+	background-color: aqua;
+}
+table{
+	text-align: center;
+	padding: 20px;
+}
+.button{
+	width:80px;
+}
+input{
+	margin:10px;
+}
+a{
+	text-decoration: none;
+	font-size: 14px;
+	color:grey;
+}
+a:hover{
+	color:blue;
+}
+h4{
+	margin:0px auto;
+	text-align: center;
+	font-family: "¡• È";
+	opacity: 0.4;
+}
+span{
+	color: red;
+	font-size: 14px;
+}
+#countryID{
+	width:50px;
+}
+.divt{
+	background-image: url('../picture/register_bac.jpg');
+	height:108px;
+}
+.divt a{
+	color: red;
+	margin-left:1580px;
+	margin-top:55px;
+	position: absolute;
+}
+#tips{
+	font-size:16px;
+	color:red;
+}
+.divb{
+	width: 1500px;
+	margin:20px auto;
+	text-align: center;
+}
+.divb span{
+	color:grey;
+}
+#province select, #city select{
+	width:80px;
+}

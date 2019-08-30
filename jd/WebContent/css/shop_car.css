@@ -1,0 +1,246 @@
+a{
+	text-decoration: none;
+	color: black;
+    color: gray;
+}
+a:hover{
+    color: blue;
+}
+.head{
+	height: 30px;
+	background-color: rgb(228, 227, 227);
+}
+.head span{
+	margin-left: 300px;
+	font-size: 14px;
+}
+.head option{
+	color: gray;
+}
+.head >div{
+	width: 1100px;
+	margin: 0px auto;
+	height: 30px;
+	background-color: rgb(228, 227, 227);
+}
+.head div div{
+	height: 30px;
+	line-height: 30px;
+	width: 60px;
+	margin-left: 0px;
+	float: left;
+	font-size: 14px;
+	color: gray;
+}
+.head div a{
+	line-height: 30px;
+	height: 30px;
+	margin-right: 5px;
+	font-size: 14px;
+	color: gray;
+}
+.head div select{
+	line-height: 30px;
+	height: 30px;
+	font-size: 14px;
+	color: gray;
+	background-color: rgb(228, 227, 227);
+	border:0px;
+}
+.head div::after,#search .ul2::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.head .orderCar{
+	display: inline-block;
+}
+.head .orderCar input{
+	border:none;
+	background:none;
+	cursor:pointer;
+}
+
+.found{
+	width: 1100px;
+    margin: 0px auto;
+    text-align: center;
+}
+.found a{
+	font-weight: border;
+	font-size:20px;
+	color: black;
+	margin-right: 400px;
+}
+.search{
+    width: 1100px;
+    margin: 0px auto;
+}
+.search .text{
+	height: 30px;
+	line-height: 30px;
+	background-color: rgb(228, 227, 227);
+	width:400px;
+	color: gray;
+}
+.search .submit{
+	height: 35px;
+	line-height: 35px;
+	width: 80px;
+	background-color:red;
+}
+.search .button{
+	height: 35px;
+	line-height: 35px;
+	width: 100px;
+	background-color:white;
+	border: 1px solid rgb(231, 231, 231);
+}
+.search .ul1 li{
+	list-style-type: none;
+	float: left;
+	margin-right: 10px;
+	font-size: 12px;
+	color: gray;
+}
+#search .ul1 a:hover{
+	color: blue;
+}
+.shopcar{
+	 width: 1100px;
+	 margin:0px auto;
+}
+.shopcar >span{
+	 font-size:18px;
+	 color:red
+}
+.shopcar #formt{
+	margin-top: -25px;
+	margin-left: 200px;
+}
+.shopcar #formt input{
+	font-size: 18px;
+	color: blue;
+	border:none;
+	background-color: white;
+	cursor: pointer;
+}
+.shopcar .divt{
+	background-color: rgb(228, 227, 227);
+	font-size: 14px;
+	height: 30px;
+	line-height: 30px;
+}
+.shopcar .divt .spanl{
+	margin-left:65px
+}
+.shopcar .divt .spanm{
+	margin-left:500px
+}
+.shopcar .divt .spanr{
+	margin-left:100px
+}
+.shopcar .divm{
+	font-size: 14px;
+	height: 120px;
+}
+.shopcar .divm >input{
+	position: absolute;
+}
+.shopcar .divm >img{
+	height: 80px;
+	width:80px;
+	padding: 20px;
+}
+.shopcar .divm .divtf{
+	width:400px;
+	margin-left: 120px;
+	margin-top: -110px;
+} 
+.shopcar .divm #shopName{
+	display: none;
+} 
+.shopcar .divm .divbf{
+	margin-left:650px;
+	position: absolute;
+	margin-top:-35px;
+	width:500px;
+}
+.shopcar .divm .divbf .a1{
+	border:1px solid grey;
+	margin-left:50px;
+	background-color: white;
+}
+.shopcar .divm .divbf form{
+	display: inline;
+}
+.shopcar .divm .divbf .a2,.shopcar .divm .divbf .s2{
+	border:1px solid grey;
+	background-color: white;
+}
+.shopcar .divm .divbf .a3,.shopcar .divm .divbf .s3{
+	margin-left:50px;
+	background-color: white;
+}
+.divbottom{
+	position: fixed;
+	bottom:20px;
+	background-color: white;
+	width:100%;
+}
+.divbottom div{
+	width: 1100px;
+	margin:0px auto;
+	font-size: 14px;
+	height:50px;
+	line-height: 50px;
+}
+.divbottom div form{
+	margin-top: -50px;
+	margin-left: 800px;
+}
+.divbottom div form input{
+	height:50px;
+	line-height: 50px;
+	background-color:#f40;
+	width: 100px;
+	font-size: 20px;
+}
+.divbottom div form .color{
+	color:red;
+}
+
+
+.jd_ed{
+	background-color: rgb(228, 227, 227);
+	border-top: 2px solid rgb(209, 207, 207);
+	margin-top: 20px;
+}
+.end,.mod_copyright_info{
+	width: 1200px;
+	margin: 0px auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid rgb(197, 195, 195);
+}
+mod_copyright_info >p{
+	text-align: center;
+	font-size: 14px;
+}
+mod_copyright_info >p a{
+	margin-left: 40px;
+}
+mod_copyright_info .about{
+	margin-left:20px;
+	font-size: 14px;
+}
+.end td{
+	width: 200px;
+}
+.mod_copyright_info{
+	font-size: 14px;
+	text-align: center;
+}
+.end a{
+	font-size: 14px;
+}

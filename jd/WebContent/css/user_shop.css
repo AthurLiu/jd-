@@ -1,0 +1,307 @@
+a{
+	text-decoration: none;
+	color: black;
+    color: gray;
+}
+a:hover{
+    color: blue;
+}
+.head{
+	height: 30px;
+	background-color: rgb(228, 227, 227);
+}
+.head span{
+	margin-left: 300px;
+	font-size: 14px;
+}
+.head >div{
+	width: 1100px;
+	margin: 0px auto;
+	height: 30px;
+	background-color: rgb(228, 227, 227);
+}
+.head div div{
+	height: 30px;
+	line-height: 30px;
+	width: 60px;
+	margin-left: 0px;
+	float: left;
+	font-size: 14px;
+	color: gray;
+}
+.head div a{
+	line-height: 30px;
+	height: 30px;
+	margin-right: 5px;
+	font-size: 14px;
+	color: gray;
+}
+.head div select{
+	line-height: 30px;
+	height: 30px;
+	font-size: 14px;
+	color: gray;
+	background-color: rgb(228, 227, 227);
+	border:0px;
+}
+.head div::after,#search .ul2::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.head .orderCar{
+	display: inline-block;
+}
+.head .orderCar input{
+	border:none;
+	background:none;
+	cursor:pointer;
+}
+.found{
+	width: 1100px;
+    margin: 0px auto;
+    text-align: center;
+}
+.found .search .find{
+	background-color:#f40;
+	font-size: 14px;
+	padding:6px;
+}
+.found .search .ul1{
+	margin-left: 220px;
+}
+.found .search .ul1 .col, #body .divt1 .col{
+	color: #f40;
+}
+.search{
+    width: 1100px;
+    margin: 0px auto;
+}
+.search .text{
+	height: 30px;
+	line-height: 30px;
+	background-color: rgb(228, 227, 227);
+	width:400px;
+	color: gray;
+}
+.search .submit{
+	height: 35px;
+	line-height: 35px;
+	width: 80px;
+	background-color:red;
+}
+.search .button{
+	height: 35px;
+	line-height: 35px;
+	width: 100px;
+	background-color:white;
+	border: 1px solid rgb(231, 231, 231);
+}
+.search .ul1 li{
+	list-style-type: none;
+	float: left;
+	margin-right: 10px;
+	font-size: 12px;
+	color: gray;
+}
+#search .ul1 a:hover{
+	color: blue;
+}
+#body div div ul li{
+    list-style-type: none;
+    float: left;
+    padding: 0px;
+    margin-right:20px;
+    line-height: 40px;
+}
+#body div div ul li a{
+    color: white;
+}
+#body div div ul li:hover{
+    background-color: grey;
+}
+#body .div2{
+    line-height: 40px;
+    font-size: 14px;
+}
+#body .divt{
+    background-image: url('../product/phone_top.png');
+    width:1477px;
+    height: 112px;
+    margin: 0px auto;
+}
+#body .divbag{
+    background-image: url('../product/bag_top.gif');
+    height: 112px;
+    margin: 0px auto;
+}
+#body .divphi{
+    background-image: url('../product/philips_top.jpg');
+    width:1100px;
+    height: 112px;
+    margin: 0px auto;
+}
+#body .divpac{
+    background-image: url('../product/package_top.jpg');
+    height: 112px;
+    margin: 0px auto;
+}
+#body .divt1{
+    background-color: black;
+    height: 40px;
+}
+#body .divt1 >div{
+    width: 1200px;
+    margin:0px auto;
+    background-color: black;
+}
+#body .div2{
+	background-color: rgb(228, 227, 227);
+	height: 40px;
+}
+#body .div2 div{
+	width: 1200px;
+	margin:0px auto;
+	background-color: rgb(228, 227, 227);
+}
+#body .div2 div .shopname{
+	margin-left: 300px;
+}
+#body .div3{
+	width: 1200px;
+    margin:0px auto;
+}
+#body .div3 .left .back_pho{
+    background-image:url('../product/phone1.png');
+    width: 450px;
+    height: 450px;
+}
+#body .div3 .left .back_phi{
+    background-image:url('../product/philips1.jpg');
+    width: 350px;
+    height: 350px;
+}
+#body .div3 .left .back_pac{
+    background-image:url('../product/package1.jpg');
+    width: 350px;
+    height: 350px;
+}
+#body .div3 .left .back_bag{
+    background-image:url('../product/bag1.jpg');
+    width: 350px;
+    height: 350px;
+}
+#body .div3 .left div >div{
+    position: absolute;
+    bottom: 150px;
+    left: 250px;
+    margin: 20px;
+    height: 50px;
+    width:50px;
+    background-color: gray;
+    border-radius: 25px;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+#body .div3 .left div >div:hover{
+    color: darkorange;
+    background-color: cyan;
+}
+#body .div3 .left img{
+    height: 60px;
+    margin-right: 20px;
+}
+#body .div3 .left a{
+    font-size: 14px;
+}
+#body .div3 .right >p{
+	font-size: 20px;
+}
+#body .div3 .right .quiksal{
+	font-size: 18px;
+	color: white;
+	background-color: tomato;
+}
+#body .div3 .right .name{
+	display: none;
+}
+#body .div3 .right .addShop{
+	background-color: #f40;
+	color:white;
+}
+#body .div3 .right .sendpath,#body .div3 .right .raise{
+	font-size: 12px;
+	color:grey;
+	margin-left:50px;
+}
+.jd_ed{
+	background-color: rgb(228, 227, 227);
+	border-top: 2px solid rgb(209, 207, 207);
+	margin-top: 20px;
+}
+.end,.mod_copyright_info{
+	width: 1200px;
+	margin: 0px auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid rgb(197, 195, 195);
+}
+mod_copyright_info >p{
+	text-align: center;
+	font-size: 14px;
+}
+mod_copyright_info >p a{
+	margin-left: 40px;
+}
+mod_copyright_info .about{
+	margin-left:20px;
+	font-size: 14px;
+}
+.end td{
+	width: 200px;
+}
+.mod_copyright_info{
+	font-size: 14px;
+	text-align: center;
+}
+.end a{
+	font-size: 14px;
+}
+.mod_copyright_info{
+	font-size: 12px;
+	text-align: center;
+	width: 1100px;
+	margin: 0px auto;
+}
+.left img{
+    cursor: pointer;
+}
+
+.right{
+    margin-top: -575px;
+    margin-left: 470px;
+    font-size: 14px;
+    line-height: 30px;
+}
+.right .a{
+    color: cornflowerblue;
+    margin-top: 10px;
+}
+.right .a:hover{
+    color: red;
+}
+.right .b{
+    display: inline-block;
+    border: 1px solid gray;
+    padding: 0px 10px;
+    margin-top: 10px;
+}
+.right .b:hover{
+    border-color: red;
+}
+.right input{
+    height: 30px;
+}
+

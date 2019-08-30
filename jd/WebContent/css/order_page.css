@@ -1,0 +1,222 @@
+body{
+	background-color: rgb(228, 227, 227);
+}
+a{
+	text-decoration: none;
+	color: black;
+	color: gray;
+}
+
+.head{
+	height: 30px;
+	background-color: rgb(228, 227, 227);
+}
+.head >div{
+	width: 1200px;
+	margin: 0px auto;
+	height: 30px;
+	background-color: rgb(228, 227, 227);
+}
+.head span{
+	 margin-left: 400px;
+	 font-size: 14px;
+}
+.head div div{
+	height: 30px;
+	line-height: 30px;
+	width: 60px;
+	margin-left: 0px;
+	float: left;
+	font-size: 14px;
+	color: gray;
+}
+.head div a{
+	line-height: 30px;
+	height: 30px;
+	margin-right: 5px;
+	font-size: 14px;
+	color: gray;
+}
+.head div select{
+	line-height: 30px;
+	height: 30px;
+	font-size: 14px;
+	color: gray;
+	background-color: rgb(228, 227, 227);
+	border:0px;
+}
+.head div::after,#search .ul2::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.found{
+	background-color: #f40;
+	height: 80px;
+	line-height: 80px;
+	margin-top: -10px;
+}
+.found .search{
+	width: 1200px;
+	margin: 0px auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.found .search a{
+	margin-right: 20px;
+	color: white;
+}
+.found .search .name{
+	font-weight: border;
+	font-size:20px;
+}
+.text{
+	margin-left: 450px;
+}
+
+/*中部*/
+.body{
+	width: 1200px;
+	margin: 0px auto;
+}
+.body a{
+	font-size: 14px;
+}
+.body a:hover{
+	color: blue;
+}
+.body .body_left{
+	width: 100px;
+}
+.body .body_middle{
+	background-color: white;
+	text-align: left;
+	margin-left: 150px;
+	margin-top: -1200px;
+	/* border: 1px solid red; 
+	*/
+}
+.body .body_middle a {
+	margin-right: 52px;
+	height: 50px;
+	line-height: 50px;
+}
+.body_middle .div2{
+	background-color: rgb(228, 227, 227);
+	width: 1020px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	margin: 0px auto;
+}
+.body_middle .div2 .spanl{
+	margin-left: 200px;
+}
+.body_middle .div2 .spanr{
+	margin-left: 80px;
+}
+.body_middle .div3{
+	background-color: rgb(228, 227, 227);
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+}
+.body_middle .div3 span{
+	margin-left: 40px;
+}
+.body_middle .div4{
+	font-size: 14px;
+	height: 120px;
+}
+.body_middle .div4 img{
+	 height: 80px;
+	 width:80px;
+	 padding: 20px;
+}
+.body_middle .div4 .name{
+	 width:250px;
+	 margin-left: 120px;
+	 margin-top: -110px;
+	 height: 110px;
+}
+.body_middle .div4 .number{
+	margin-left:400px;
+	position: absolute;
+	margin-top:-110px;
+	width:1000px;
+}
+.body_middle .div4 .number div{
+	width:100px;
+	margin-left: 110px;
+	height: 110px;
+	display: inline-block;
+}
+.body_middle .div4 .number .stip{
+	margin-left:60px;
+}
+.divbottom{
+	position: fixed;
+	bottom:20px;
+	background-color: white;
+	width:100%;
+}
+.divbottom div{
+	width: 1300px;
+	margin:0px auto;
+	font-size: 14px;
+	height:50px;
+	line-height: 50px;
+}
+.divbottom .spanl{
+	margin-left: 200px;
+}
+.divbottom div form{
+	margin-top: -50px;
+	margin-left: 1000px;
+}
+.divbottom div form input{
+	height:50px;
+	line-height: 50px;
+	background-color:#f40;
+	width: 100px;
+	font-size: 20px;
+}
+.divbottom div form .color{
+	color:red;
+}
+.jd_ed{
+	background-color: rgb(228, 227, 227);
+	border-top: 2px solid rgb(209, 207, 207);
+	position: absolute;
+	bottom:-1000px;
+	left:350px;
+}
+.end,.mod_copyright_info{
+	width: 1200px;
+	margin: 0px auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid rgb(197, 195, 195);
+}
+mod_copyright_info >p{
+	text-align: center;
+	font-size: 14px;
+}
+mod_copyright_info >p a{
+	margin-left: 40px;
+}
+mod_copyright_info .about{
+	margin-left:20px;
+	font-size: 14px;
+}
+.end td{
+	width: 200px;
+}
+.mod_copyright_info{
+	font-size: 14px;
+	text-align: center;
+}
+.end a{
+	font-size: 14px;
+}

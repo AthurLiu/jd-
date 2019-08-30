@@ -1,0 +1,275 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>我的购物车 - 京东商城</title>
+        <script src=""></script>
+        <link rel="shortcut icon" type="image/x-icon" href="picture/jd_logo.ico"/>
+        <link rel="stylesheet" href="../css/pay_money.css">
+    </head>
+    <body>
+        <div class="head" id="head">
+            <div>
+                <div id="local" title="江苏">&nbsp;&nbsp;江苏&nbsp;&nbsp;</div>
+                <span style="margin-left: 400px;font-size: 14px">幽竹一枝</span>
+                <a href="JSP/user_page2.jsp">|  &nbsp;&nbsp;回到首页 |</a>
+                <a href="">  &nbsp;我的订单 |</a>
+                <select name="" id="">
+                    <option value="">我的京东</option>
+                    <option value="">消息</option>
+                    <option value="">待处理订单</option>
+                    <option value="">返修退换货</option>
+                    <option value="">降价商品</option>
+                    <option value="">我的京豆</option>
+                    <option value="">我的白条</option>
+                    <option value="">我的关注</option>
+                    <option value="">我的问答</option>
+                </select>
+                <a href="">|  &nbsp;京东会员 |</a>
+                <select name="" id="" style="color: red">
+                    <option value="" style="color: gray">企业采购</option>
+                    <option value="" style="color: gray">企业购</option>
+                    <option value="" style="color: gray">工业品</option>
+                    <option value="" style="color: gray">礼品卡</option>
+                    <option value="" style="color: gray">商品场景馆</option>
+                </select>
+                <a href="">客户服务ˇˇ</a>
+                <a href="">网站导航ˇˇ</a>
+                <a href="">手机京东</a>
+            </div>
+        </div>    
+
+        <div class="found">
+            <div class="search">      
+                <form action="" method="POST">
+                    <a href="" style="font-weight: border;font-size:20px">我的京东</a>
+                    <a href="">首页</a>
+                    <a href="">账户设置</a>
+                    <a href="">评价</a>
+                    <a href="">消息</a>
+                    <input class="text" type="text" name="search" value="自营"
+                    onfocus="if(this.value == '自营'){this.value = '';this.style.color = 'black'}" onblur="if(this.value == ''){this.value = '请输入关键字';this.style.color = 'gray'}" >
+                    <input class="button" type="button" value="查询">
+                    <input class="submit" type="submit" value="购物车">
+                </form>
+            </div>
+        </div>
+        <br>
+        
+        <div class="body"> 
+            <div class="body_left">
+                <p>订单中心</p>
+                <a href="" style="color: orangered">我的订单</a><br>
+                <a href="">我的活动</a><br>
+                <a href="">评价晒单</a><br>
+                <a href="">我的常购商品</a><br>
+                <a href="">代下单</a><br>
+                <p>关注中心</p>
+                <a href="">关注的商品</a><br>
+                <a href="">关注的店铺</a><br>
+                <a href="">关注的专辑</a><br>
+                <a href="">收藏的内容</a><br>
+                <a href="">关注的活动</a><br>
+                <p>资产中心</p>
+                <a href="">小金库</a><br>
+                <a href="">京东白条</a><br>
+                <a href="">领货码</a><br>
+                <a href="">余额</a><br>
+                <a href="">红包</a><br>
+                <a href="">银行卡</a><br>
+                <a href="">优惠券</a><br>
+                <a href="">礼品卡</a><br>
+                <a href="">京豆</a><br>
+                <a href="">京东钢镚</a><br>
+                <p>特色业务</p>
+                <a href="">我的营业厅</a><br>
+                <a href="">京东通信</a><br>
+                <a href="">定期购</a><br>
+                <a href="">我的回收单</a><br>
+                <a href="">节能补贴</a><br>
+                <a href="">医药服务</a><br>
+                <a href="">流量加油站</a><br>
+                <a href="">黄金托管</a><br>
+                <a href="">我的课程</a><br>
+                <a href="">海外房产预约</a><br>
+                <a href="">我的海囤全球</a><br>
+                <a href="">装修服务</a><br>
+                <a href="">我的拍卖</a><br>
+                <a href="">我的集运</a><br>
+                <a href="">耗材自动递送</a><br>
+                <a href="">京东机票</a><br>
+                <p>客户服务</p>
+                <a href="">返修退换货</a><br>
+                <a href="">价格保护</a><br>
+                <a href="">意见建议</a><br>
+                <a href="">我的问答</a><br>
+                <a href="">购买咨询</a><br>
+                <a href="">交易纠纷</a><br>
+                <a href="">京东维修</a><br>
+                <a href="">我的发票</a><br>
+                <a href="">举报中心</a><br>
+                <p>设置</p>
+                <a href="">个人信息</a><br>
+                <a href="">收货地址</a><br>
+            </div>
+            <div class="body_top">&nbsp;&nbsp;&nbsp;&nbsp;我的订单</div>
+            <br>
+            <div class="body_middle">
+                &nbsp;&nbsp;&nbsp;&nbsp;<a href="">全部订单</a>
+                <a href="">待付款</a>
+                <a href="">待收货</a>
+                <a href="">待评价</a>
+                <a href="">我的常购商品</a>
+                <a href="">订单回收站</a>
+                <div class="div2">
+                    &nbsp;&nbsp;<span>近三个月订单</span>
+                    <span style="margin-left: 200px">订单详情</span>
+                    <span style="margin-left: 200px ">收货人</span>
+                    <span style="margin-left: 80px ">金额</span>
+                    <span style="margin-left: 80px ">全部状态</span>
+                    <span style="margin-left: 80px">操作</span>
+                </div>
+                <br>
+                <div class="div3">
+                    <div class="div3_1" >
+                        <span>时间</span>
+                        <span>订单号</span>
+                    </div>
+                    <div style="font-size: 14px;height: 120px">
+                        <img alt="" style="height: 80px;width:80px;padding: 20px" src="../product/bag1.jpg">
+                        <div style="width:250px;margin-left: 120px;margin-top: -110px;height: 110px">
+                            <span>商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称</span>
+                        </div>
+                        <div style="margin-left:400px;position: absolute;margin-top:-110px">
+                            <span>数量</span>
+                            <span style="margin-left:110px">&nbsp;&nbsp;用户名&nbsp;&nbsp;</span>
+                            <span style="margin-left:70px">￥</span>
+                            <span>&nbsp;&nbsp;金额&nbsp;&nbsp;</span>
+                            <span style="margin-left:50px">待支付</span>
+                            <input style="margin-left:70px" type="submit" value="立即购买">
+                        </div>        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="jd_ed">
+            <div class="end">
+                <table>
+                    <tr>
+                        <td>
+                            <h4>购物指南</h4>
+                            <a href="">购物流程</a><br>
+                            <a href="">会员介绍</a><br>
+                            <a href="">生活旅行</a><br>
+                            <a href="">常见问题</a><br>
+                            <a href="">大家电</a><br>
+                            <a href="">联系客服</a><br>
+                        </td>
+                        <td>
+                            <h4>配送方法</h4>
+                            <a href="">上门自提</a><br>
+                            <a href="">211限时达</a><br>
+                            <a href="">配送服务查询</a><br>
+                            <a href="">配送费收取标准</a><br>
+                            <a href="">海外配送</a><br><br>
+                        </td>
+                        <td>
+                            <h4>支付方法</h4>
+                            <a href="">货到付款</a><br>
+                            <a href="">在线支付</a><br>
+                            <a href="">分期付款</a><br>
+                            <a href="">邮局汇款</a><br>
+                            <a href="">公司转账</a><br><br>
+                        </td>
+                        <td>
+                            <h4>售后服务</h4>
+                            <a href="">售后政策</a><br>
+                            <a href="">价格保护</a><br>
+                            <a href="">退款说明</a><br>
+                            <a href="">返修/退换货</a><br>
+                            <a href="">取消订单</a><br><br>
+                        </td>
+                        <td>
+                            <h4>特色服务</h4>
+                            <a href="">夺宝岛</a><br>
+                            <a href="">DIY装机</a><br>
+                            <a href="">延保服务</a><br>
+                            <a href="">京东IE卡</a><br>
+                            <a href="">京东通讯</a><br>
+                            <a href="">鲸鱼座智能</a><br>
+                        </td>
+                        <td>
+                            <h4>京东自营覆盖区县</h4>
+                            <a>京东已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</a><br>
+                            <a href="">查看详情></a><br><br>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="mod_copyright_info">
+                <p style="margin-left:20px;font-size: 14px;">
+                    <a href="" target="_blank">关于我们</a><span>|</span>
+                    <a href="" target="_blank">联系我们</a><span>|</span>
+                    <a href="" target="_blank">联系客服</a><span>|</span>
+                    <a href="" target="_blank">合作招商</a><span>|</span>
+                    <a href="" target="_blank">商家帮助</a><span>|</span>
+                    <a href="" target="_blank">营销中心</a><span>|</span>
+                    <a href="" target="_blank">手机京东</a><span>|</span>
+                    <a href="" target="_blank">友情链接</a><span>|</span>
+                    <a href="" target="_blank">销售联盟</a><span>|</span>
+                    <a href="" target="_blank">京东社区</a><span>|</span>
+                    <a href="" target="_blank">风险监测</a><span>|</span>
+                    <a href="" target="_blank">隐私政策</a><span>|</span>
+                    <a href="" target="_blank">京东公益</a><span>|</span>
+                    <a href="" target="_blank">English Site</a><span>|</span>
+                    <a href="" target="_blank">Media &amp; IR</a>
+                </p>
+                <div>
+                    <p>
+                        <a href="" target="_blank">京公网安备 11000002000088号</a><span>|</span>
+                        <span>京ICP证070359号</span><span>|</span>
+                        <a href="" target="_blank">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>
+                        <span>|</span><span>新出发京零&amp;&nbsp;字第大120007号</span>
+                    </p>
+                    <p>
+                        <span>互联网出版许可证编号新出网证(京)字150号</span><span>|</span>
+                        <a href="" target="_blank">出版物经营许可证</a><span>|</span>
+                        <a href="" target="_blank">网络文化经营许可证京网文[2014]2148-348号</a><span>|</span>
+                        <span>违法和不良信息举报电话：4006561155</span>
+                    </p>
+                    <p>
+                        <span>Copyright&nbsp;©&nbsp;2004&nbsp;-&nbsp;2019&nbsp;&nbsp;京东JD.com&nbsp;版权所有</span>
+                        <span>|</span><span>消费者维权热线：4006067733</span>
+                        <a href="" target="_blank">经营证照</a><span>|</span>
+                        <span>(京)网械平台备字(2018)第00003号</span><span>|</span>
+                        <a href="" target="_blank">营业执照</a>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <a href="" target="_blank">Global Site</a><span>|</span>
+                        <a href="" target="_blank">Сайт России</a><span>|</span>
+                        <a href="" target="_blank">Situs Indonesia</a><span>|</span>
+                        <a href="" target="_blank">Sitio de España</a><span>|</span>
+                        <a href="" target="_blank"> เว็บไซต์ประเทศไทย </a>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <span>京东旗下网站：</span>
+                        <a href="" target="_blank">京东钱包</a><span>|</span>
+                        <a href="" target="_blank">京东云</a>
+                    </p>
+                </div>
+                <p style="text-align: center;font-size: 14px;">
+                    <a href="" target="_blank" style="margin-left: 40px">可信网站信用评估</a>
+                    <a href="" target="_blank" style="margin-left: 40px">网络警察提醒你</a>
+                    <a href="" target="_blank" style="margin-left: 40px">诚信网站</a>
+                    <a href="" target="_blank" style="margin-left: 40px">中国互联网举报中心</a>
+                    <a href="" target="_blank" style="margin-left: 40px">网络举报APP下载</a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

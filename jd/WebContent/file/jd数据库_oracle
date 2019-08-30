@@ -1,0 +1,95 @@
+--用户表
+create sequence t_personalInfo_id minvalue 1 maxvalue 999999999999999999 start with 1 increment by 1 nocache nocycle
+create table t_personalInfo(
+    user_id number(18) primary key,--用户编号
+    user_name varchar2(50),
+    user_pass varchar2(32),
+    user_gender char(1),
+    user_phone number(11),
+    user_email varchar2(50),
+    user_address varchar2(200),
+    
+    create_id number(18),--创建用户信息的人员编号user_id
+    create_time date,
+    update_id number(18),
+    update_time date,
+    
+    constraint pro_create_f foreign key(create_id) references t_personalInfo(user_id),
+    constraint pro_update_f foreign key(update_id) references t_personalInfo(user_id)
+);
+
+--商品表
+create sequence t_product_id minvalue 1 maxvalue 999999999999999999 start with 1 increment by 1 nocache nocycle
+create table t_product(
+    pro_id number(18) primary key,--商品编号
+    pro_name varchar2(100),
+    pro_pic varchar2(100),
+    pro_price number(7,2),
+    pro_number number(8),--商品库存
+    
+    create_id number(18),--加入某件商品的人员编号user_id
+    create_time date,
+    update_id number(18),
+    update_time date,
+    
+    constraint pro_create_f foreign key(create_id) references t_personalInfo(user_id),
+    constraint pro_update_f foreign key(update_id) references t_personalInfo(user_id)
+);
+insert into t_product values(t_product_id.nextval,'华为（HUAWEI）荣耀8X 手机全面屏全网通 魅海蓝 6GB+128GB 尊享版',
+'../product/phone1.png','1519.00',80000,007,sysdate,007,sysdate);
+insert into t_product values(t_product_id.nextval,'飞利浦（PHILIPS）破壁料理机家用全自动多功能加热电动榨汁搅拌豆浆机做养生果汁辅食HR2087/20',
+'../product/philips1.jpg','1104.15',80000,007,sysdate,007,sysdate);
+insert into t_product values(t_product_id.nextval,'吉鲁宾528拉杆箱 旅行箱行李箱男士女士登机箱20/24/26/29英寸箱包万向轮 玫瑰金 20英寸 登机箱',
+'../product/package1.jpg','199.00',80000,007,sysdate,007,sysdate);
+insert into t_product values(t_product_id.nextval,'万宝龙MONTBLANC大班软皮粒纹系列男士黑色牛皮拉链双肩包113950',
+'../product/bag1.jpg','5650.00',80000,007,sysdate,007,sysdate);
+update t_product set pro_name = '华为（HUAWEI）荣耀8X 手机全面屏全网通 魅海蓝 6GB+128GB 尊享版' where pro_pic = '../product/phone1.png';
+
+--购物车表
+create sequence t_basket_id minvalue 1 maxvalue 999999999999999999 start with 1 increment by 1 nocache nocycle
+create table t_basket(
+    bas_id number(18) primary key,--序列产生
+    user_id number(18),--用户编号user_id（可以根据用户名查出）
+    pro_id number(18),--商品编号pro_id（关联商品表，得到商品名称和价格）（可以根据商品名查出）
+    bas_number number(8),--加入购物车的某件商品总件数
+    
+    create_id number(18),--加入购物车商品的人员编号user_id
+    create_time date,
+    update_id number(18),
+    update_time date,
+    
+    constraint pro_userid_ba foreign key(user_id) references t_personalInfo(user_id),
+    constraint pro_productid_ba foreign key(pro_id) references t_product(pro_id),
+    constraint pro_create_ba foreign key(create_id) references t_personalInfo(user_id),
+    constraint pro_update_ba foreign key(update_id) references t_personalInfo(user_id)
+);
+
+--订单表
+create sequence t_order_id minvalue 1 maxvalue 999999999999999999 start with 1 increment by 1 nocache nocycle
+create table t_order(
+    ord_id number(18) primary key,--订单编号 JD+20190203+序列号
+    ord_time date,--订单时间
+    user_id number(18),--用户编号user_id
+    --收件人地址在用户表里面
+    
+    create_id number(18),--加入购物车商品的人员编号user_id
+    create_time date,
+    update_id number(18),
+    update_time date,
+    
+    constraint pro_userid_or foreign key(user_id) references t_personalInfo(user_id),
+    constraint pro_create_or foreign key(create_id) references t_personalInfo(user_id),
+    constraint pro_update_or foreign key(update_id) references t_personalInfo(user_id)
+);
+
+--订单条目表
+create sequence t_orderpro_id minvalue 1 maxvalue 999999999999999999 start with 1 increment by 1 nocache nocycle
+create table t_orderpro(
+    t_orderpro_id number(18) primary key,
+    ord_id number(18),--订单编号ord_id
+    pro_id number(18),--商品编号pro_id（关联商品表，得到商品名称和价格）
+    pr_number varchar2(100),--商品件数
+    
+    constraint pro_productid_it foreign key(pro_id) references t_product(pro_id),
+    constraint pro_orderno_it foreign key(ord_id) references t_order(ord_id)
+);

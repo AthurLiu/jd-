@@ -1,0 +1,68 @@
+form{
+	position: absolute;
+	background-color: white;
+	width:350px;
+	top: 185px;
+	left:1200px;
+	background-color: transparent;
+	border:1px solid black;
+}
+.divt{
+	background-image: url('../picture/login_bac.jpg');
+	height: 600px;
+}
+#number{
+	background-image: url('../picture/yzmbac.jpg');
+	width: 80px;
+	margin-left:15px;
+	opacity: 0.5;
+	display: inline-block;
+	float:left;
+}
+#form1 img{
+	position:absolute;
+	height: 16px;
+	cursor: pointer;
+	margin-left: 257px;
+	top:121px;
+}
+table{
+	text-align: center;
+	padding: 20px;
+}
+.button{
+	width:80px;
+}
+input{
+	margin:10px;
+}
+a,span{
+	text-decoration: none;
+	font-size: 14px;
+	color: grey;
+}
+a:hover{
+	color: blue;
+}
+h4{
+	margin:0px auto;
+	text-align: center;
+	font-family: "¡• È";
+	opacity: 0.4;
+}
+.divb{
+	width: 1500px;
+	margin:20px auto;
+	text-align: center;
+}
+.find_pass{
+	color: rgb(179, 174, 174); 
+	font-size:12px;
+}
+#tips{
+	font-size:14px;
+	color:red;
+}
+#mes{
+	width:210px;
+}
